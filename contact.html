@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact : Mountari et Ndouwe</title>
+  <meta name="description" content="Une idée, une question ou un projet à partager ? Écrivez à Mountari et Ndouwe, ouverts à la collaboration et à la discussion.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- En-tête et navigation (à recopier à l'identique sur chaque page, seul aria-current change) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="projets.html" class="nav-link">Projets</a>
+        <a href="equipe.html" class="nav-link">Équipe et Parcours</a>
+        <a href="competences.html" class="nav-link">Compétences</a>
+        <a href="contact.html" class="nav-link is-active" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container contact-page">
+
+      <!-- Titre -->
+      <section class="contact-hero">
+        <h1>On en parle ?</h1>
+        <p>Une idée, une question ou un projet à partager ? Écrivez-nous. Que ce soit pour collaborer ou simplement échanger, nous sommes ouverts à la discussion.</p>
+      </section>
+
+      <div class="contact-grid">
+
+        <!-- Formulaire -->
+        <div class="form-card">
+          <div class="form-head">
+            <h2>Envoyez-nous un message</h2>
+            <p>Remplissez le formulaire, nous revenons vers vous rapidement.</p>
+          </div>
+
+          <!-- À configurer : crée un formulaire gratuit sur formspree.io, puis remplace VOTRE_ID_FORMSPREE par l'identifiant fourni -->
+          <form id="contact-form" class="contact-form" action="https://formspree.io/f/xwlvnzee" method="POST">
+          <div class="field">
+            <label for="full-name">Nom complet <span class="req">*</span></label>
+            <input type="text" id="full-name" name="name" placeholder="Votre nom" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">Adresse email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="nom@exemple.com" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="subject">Objet de votre message <span class="req">*</span></label>
+            <input type="text" id="subject" name="subject" placeholder="Collaboration, question, projet..." required>
+          </div>
+          <div class="field">
+            <label for="message">Message <span class="req">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Expliquez-nous votre projet ou votre demande..." required></textarea>
+          </div>
+            <!-- Champ piège anti spam, à laisser vide -->
+            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="form-actions">
+              <button class="btn-submit" type="submit">
+                Envoyer le message
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <!-- Coordonnées directes -->
+        <div class="channels">
+
+          <div class="channel-card">
+            <div class="channel-head"><h3>Mountari Tidjani Bouba Djidda</h3></div>
+            <div class="channel-list">
+          <a class="channel channel-mail" href="mailto:boubamountari@gmail.com">
+            <span class="channel-icon icon-round"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="channel-text">
+              <span class="channel-label">Email</span>
+              <span class="channel-value">boubamountari@gmail.com</span>
+            </span>
+            <span class="channel-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+              <div class="channel-socials">
+            <a class="channel" href="https://www.linkedin.com/in/bouba-tidjani" target="_blank" rel="noopener noreferrer">
+              <span class="channel-icon icon-square" style="background: #0A66C2;"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M19 19h-3.14v-4.92c0-1.17-.02-2.68-1.63-2.68-1.63 0-1.88 1.28-1.88 2.6v4.99H9.21V8.88h3.01v1.38h.04c.42-.79 1.44-1.63 2.97-1.63 3.17 0 3.76 2.09 3.76 4.81V19zM5.88 7.51a1.82 1.82 0 110-3.64 1.82 1.82 0 010 3.64zM7.45 19H4.31V8.88h3.14V19z"/></svg></span>
+              <span class="channel-text">
+                <span class="channel-label">LinkedIn</span>
+                <span class="channel-value">bouba-tidjani</span>
+              </span>
+              <span class="channel-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+            <a class="channel" href="https://github.com/Bouba-Tidjani-dev" target="_blank" rel="noopener noreferrer">
+              <span class="channel-icon icon-square" style="background: #24292F;"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></span>
+              <span class="channel-text">
+                <span class="channel-label">GitHub</span>
+                <span class="channel-value">Bouba-Tidjani-dev</span>
+              </span>
+              <span class="channel-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+            <a class="channel" href="https://www.instagram.com/bou6a_" target="_blank" rel="noopener noreferrer">
+              <span class="channel-icon icon-square" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="#fff" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="#fff"/></svg></span>
+              <span class="channel-text">
+                <span class="channel-label">Instagram</span>
+                <span class="channel-value">@bou6a_</span>
+              </span>
+              <span class="channel-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="channel-card">
+            <div class="channel-head"><h3>Ndouwe Ndiwa Cemar</h3></div>
+            <div class="channel-list">
+          <a class="channel channel-mail" href="mailto:ndikwacemar4@gmail.com">
+            <span class="channel-icon icon-round"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="channel-text">
+              <span class="channel-label">Email</span>
+              <span class="channel-value">ndikwacemar4@gmail.com</span>
+            </span>
+            <span class="channel-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+              <div class="channel-socials">
+            <a class="channel" href="https://wa.me/237696750749" target="_blank" rel="noopener noreferrer">
+              <span class="channel-icon icon-square" style="background: #25D366;"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M17.5 14.34c-.26-.13-1.54-.76-1.78-.85-.24-.09-.41-.13-.58.13-.17.26-.67.85-.82 1.02-.15.17-.3.19-.56.06-.26-.13-1.1-.41-2.09-1.29-.77-.69-1.29-1.54-1.44-1.8-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.45.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.06-.13-.58-1.4-.8-1.92-.21-.51-.43-.44-.59-.45h-.51c-.17 0-.45.06-.69.32-.24.26-.91.89-.91 2.17 0 1.28.93 2.52 1.06 2.69.13.17 1.84 2.81 4.45 3.94.62.27 1.11.43 1.49.55.63.2 1.2.17 1.65.1.5-.07 1.54-.63 1.76-1.24.22-.61.22-1.13.15-1.24-.07-.11-.24-.18-.5-.31z"/></svg></span>
+              <span class="channel-text">
+                <span class="channel-label">WhatsApp</span>
+                <span class="channel-value">+237 696 75 07 49</span>
+              </span>
+              <span class="channel-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+            <a class="channel" href="https://www.facebook.com/ndikwa.cemar" target="_blank" rel="noopener noreferrer">
+              <span class="channel-icon icon-square" style="background: #1877F2;"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.2-2.2-.2-2.2 0-3.7 1.3-3.7 3.8v2.5H8v3h2.7V21h2.8z"/></svg></span>
+              <span class="channel-text">
+                <span class="channel-label">Facebook</span>
+                <span class="channel-value">ndikwa.cemar</span>
+              </span>
+              <span class="channel-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Un site fait à deux, pour montrer ce qu’on construit.</p>
+      <div class="socials">
+        <a class="social" href="mailto:boubamountari@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+        <a class="social" href="https://github.com/Bouba-Tidjani-dev" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a class="social" href="https://linkedin.com/in/bouba-tidjani" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="3" fill="#0A66C2"/><path d="M19 19h-3.14v-4.92c0-1.17-.02-2.68-1.63-2.68-1.63 0-1.88 1.28-1.88 2.6v4.99H9.21V8.88h3.01v1.38h.04c.42-.79 1.44-1.63 2.97-1.63 3.17 0 3.76 2.09 3.76 4.81V19zM5.88 7.51a1.82 1.82 0 110-3.64 1.82 1.82 0 010 3.64zM7.45 19H4.31V8.88h3.14V19z" fill="#fff"/></svg>
+        </a>
+        <a class="social" href="https://wa.me/237696750749" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2z" fill="#25D366"/><path d="M17.5 14.34c-.26-.13-1.54-.76-1.78-.85-.24-.09-.41-.13-.58.13-.17.26-.67.85-.82 1.02-.15.17-.3.19-.56.06-.26-.13-1.1-.41-2.09-1.29-.77-.69-1.29-1.54-1.44-1.8-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.45.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.06-.13-.58-1.4-.8-1.92-.21-.51-.43-.44-.59-.45h-.51c-.17 0-.45.06-.69.32-.24.26-.91.89-.91 2.17 0 1.28.93 2.52 1.06 2.69.13.17 1.84 2.81 4.45 3.94.62.27 1.11.43 1.49.55.63.2 1.2.17 1.65.1.5-.07 1.54-.63 1.76-1.24.22-.61.22-1.13.15-1.24-.07-.11-.24-.18-.5-.31z" fill="#fff"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
